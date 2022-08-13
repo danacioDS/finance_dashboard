@@ -17,7 +17,7 @@ start = st.date_input('Start', value = pd.to_datetime('2014-01-01'))
 end = st.date_input('End', value=pd.to_datetime('today'))
 
 
-st.write("Precio del activo")
+st.write("Precio del activo (En USD)")
 
 if len(dropdown) > 0:
     df = yf.download(dropdown, start, end)['Adj Close']
@@ -29,7 +29,7 @@ def relative_ret(df):
     cum_rel = cum_rel.fillna(0)
     return cum_rel
 
-st.write("Retorno del activo")    
+st.write("Retorno del activo (En Porcentajes)")    
 
 if len(dropdown) > 0:
     #df = yf.download(dropdown, start, end)['Adj Close']
