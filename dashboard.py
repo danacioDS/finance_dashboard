@@ -3,6 +3,9 @@ import yfinance as yf
 import pandas as pd
 
 
+st.write("Hola BOOTCAMP MOJIX")
+
+
 st.title("Comportamiento Activos Financieros Importantes (en tasa de crecimiento)")
 
 st.write("Descripcion tickers: ")
